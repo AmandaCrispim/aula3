@@ -1,3 +1,24 @@
-from django.shortcuts import render
+from rest_framework.viewsets import ModelViewSet
 
-# Create your views here.
+from core.models import Categoria, Editora, Livro, Autor
+from core.serializers import CategoriaSerializer, EditoraSerializer, LivroSerializer, AutorSerializer
+
+
+class CategoriaViewSet(ModelViewSet):
+    queryset = Categoria.objects.all()
+    serializer_class = CategoriaSerializer
+
+
+class EditoriaViewSet(ModelViewSet):
+    queryset = Editora.objects.all()
+    serializer_class = EditoraSerializer
+
+
+class LivroViewSet(ModelViewSet):
+    queryset = Livro.objects.all()
+    serializer_class = LivroSerializer
+
+
+class AutorViewSet(ModelViewSet):
+    queryset = Autor.objects.all()
+    serializer_class = AutorSerializer
