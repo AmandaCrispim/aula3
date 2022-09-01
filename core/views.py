@@ -9,7 +9,7 @@ class CategoriaViewSet(ModelViewSet):
     serializer_class = CategoriaSerializer
 
 
-class EditoriaViewSet(ModelViewSet):
+class EditoraViewSet(ModelViewSet):
     queryset = Editora.objects.all()
     serializer_class = EditoraSerializer
 

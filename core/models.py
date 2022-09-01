@@ -1,6 +1,5 @@
 from django.db import models
 
-from core.serializers import CategoriaSerializer, EditoraSerializer
 
 
 class Categoria(models.Model):
