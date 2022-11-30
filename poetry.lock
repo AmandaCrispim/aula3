@@ -197,6 +197,14 @@ format = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validat
 format-nongpl = ["fqdn", "idna", "isoduration", "jsonpointer (>1.13)", "rfc3339-validator", "rfc3986-validator (>0.1.0)", "uri-template", "webcolors (>=1.11)"]
 
 [[package]]
+name = "mysqlclient"
+version = "2.1.1"
+description = "Python interface to MySQL"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
 name = "pillow"
 version = "9.3.0"
 description = "Python Imaging Library (Fork)"
@@ -328,7 +336,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-co
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "6d67c77d1400e28d5eb97276663f51267791b6eff66dd270b77360abd21ed631"
+content-hash = "26a5f67d3533961046adddfef22d49d5dfee80219917155ca87973b03263d0c8"
 
 [metadata.files]
 asgiref = [
@@ -351,6 +359,7 @@ gunicorn = []
 importlib-resources = []
 inflection = []
 jsonschema = []
+mysqlclient = []
 pillow = []
 pkgutil-resolve-name = []
 pycodestyle = []
