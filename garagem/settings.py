@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     'rest_framework',
     "corsheaders",
+    "uploader",
     'core',
 ]
 
@@ -140,4 +141,13 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = "http://localhost:8000/media/"
+
+MEDIA_ENDPOINT = "/media/"
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+
+FILE_UPLOAD_PERMISSIONS = 0o640
